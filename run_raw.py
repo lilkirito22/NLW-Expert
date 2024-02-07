@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from barcode import Code128
 from barcode.writer import ImageWriter
 
+
+
 app = Flask(__name__)
 
 @app.route('/create_tag', methods=['POST'])
